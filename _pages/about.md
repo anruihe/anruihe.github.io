@@ -57,7 +57,7 @@ excerpt: "An RuiHe (Andy) — MS Student at NUS. Research in Embodied AI, Multim
       <span class="pub-badge">Survey 2026</span>
     </div>
     <div class="pub-meta">Yanzhe Chen, Ziyi Yang, Jifeng Zhu, Qiming Huang, <strong>An RuiHe</strong>, Peiyao Xu, Hesen Yang, Runda Liu, Chang Gong, Zhijun Cao, Zechen Bai, Wenzheng Zeng, Yiqi Lin, Guoqiang Liang, Kevin Yuchen Ma, Kevin Qinghong Lin, Mike Zheng Shou<sup>&dagger;</sup> (Show Lab, NUS)</div>
-    <div class="pub-meta"><a href="https://github.com/showlab/Awesome-Multimodal-Embodied-Agent/blob/main/assets/SURVEY_Multimodal_Embodied_Agent.pdf" target="_blank">Paper</a> &nbsp;·&nbsp; <a href="https://showlab.github.io/Awesome-Multimodal-Embodied-Agent/" target="_blank">Project Page</a> &nbsp;·&nbsp; <a href="https://github.com/showlab/Awesome-Multimodal-Embodied-Agent" target="_blank">GitHub</a></div>
+    <div class="pub-meta"><a href="https://doi.org/10.6084/m9.figshare.33529048" target="_blank">Paper (DOI: 10.6084/m9.figshare.33529048)</a> &nbsp;·&nbsp; <a href="https://github.com/showlab/Awesome-Multimodal-Embodied-Agent/blob/main/assets/SURVEY_Multimodal_Embodied_Agent.pdf" target="_blank">PDF</a> &nbsp;·&nbsp; <a href="https://showlab.github.io/Awesome-Multimodal-Embodied-Agent/" target="_blank">Project Page</a> &nbsp;·&nbsp; <a href="https://github.com/showlab/Awesome-Multimodal-Embodied-Agent" target="_blank">GitHub</a></div>
   </div>
   <div class="pub-item">
     <div class="pub-title">
