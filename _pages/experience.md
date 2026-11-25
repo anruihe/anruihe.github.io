@@ -66,7 +66,10 @@ excerpt: "Experience — An RuiHe, MS student at NUS."
       <img class="institution-logo" src="/images/institutions/alibaba.svg" alt="Alibaba Group logo" loading="lazy">
       <span class="summary-main">
         <span class="exp-title">Data &amp; Algorithm Intern</span>
-        <span class="exp-org">Alibaba Tongyi Lab (Wanxiang)</span>
+        <span class="exp-org exp-org-with-mark">
+          <span class="tongyi-lab-mark" aria-hidden="true"><img src="/images/institutions/tongyi-lab.png" alt="" width="216" height="216" loading="lazy"></span>
+          <span>Alibaba Tongyi Lab (Wanxiang)</span>
+        </span>
       </span>
       <span class="exp-period">Mar 2026 – Jul 2026 <span class="summary-chevron">&#9654;</span></span>
     </summary>

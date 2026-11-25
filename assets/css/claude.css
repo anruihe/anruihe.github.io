@@ -232,6 +232,9 @@ details.collapse > summary { padding: 20px 0; gap: 16px; }
 details.collapse > summary.institution-summary { display: grid; grid-template-columns: 86px minmax(0,1fr) auto; column-gap: 22px; }
 .summary-main .exp-title { font-size: 19px; }
 .summary-main .exp-org { font-size: 16px; }
+.exp-org-with-mark { display: flex; align-items: center; gap: 7px; }
+.tongyi-lab-mark { position: relative; flex: 0 0 28px; height: 28px; overflow: hidden; }
+.tongyi-lab-mark img { position: absolute; width: 108px; max-width: none; height: auto; top: -30px; left: -37px; }
 .collapse-body { padding: 0 0 22px; font-size: 16px; }
 #experience .collapse-body { padding-left: 108px; }
 .summary-chevron { margin-left: 10px; }
