@@ -269,3 +269,9 @@ footer { margin-top: 30px; font-size: 14px; }
 .nus-crest { width: 44px; height: 62px; margin-left: 15px; overflow: hidden; }
 .nus-crest img { display: block; height: 62px; width: auto; max-width: none; }
 @media (max-width:600px) { .nus-crest { width: 38px; height: 54px; margin-left: 9px; } .nus-crest img { height: 54px; } }
+/* Real project clips, rather than a large GIF download. */
+.pub-thumb.pub-video { position: relative; padding: 0; overflow: hidden; min-height: 0; background: #141414; }
+.pub-video video { display: block; width: 100%; height: auto; }
+.video-toggle { position: absolute; bottom: 6px; right: 6px; font: 400 14px/1.2 var(--sans); color: #fff; background: rgba(20,20,20,.8); border: 1px solid rgba(255,255,255,.7); padding: 4px 7px; cursor: pointer; }
+.video-toggle:hover { background: #141414; }
+.video-toggle[hidden] { display: none; }

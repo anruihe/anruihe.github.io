@@ -57,7 +57,13 @@ excerpt: "An RuiHe (Andy) — MS Student at NUS. Research in Embodied AI, Multim
 <section id="publications" class="fade-section">
   <h2>Publications</h2>
   <div class="pub-item">
-    <a class="pub-thumb" href="https://arxiv.org/abs/2611.32803" target="_blank" rel="noopener noreferrer"><img src="/images/papers/mrbench-cover.jpg" alt="MRBench project cover: physical necessity reasoning with heterogeneous robot arms" loading="lazy" decoding="async"></a>
+    <div class="pub-thumb pub-video">
+      <video autoplay muted loop playsinline preload="metadata" poster="/images/papers/mrbench-cover.jpg" aria-label="MRBench Spring Doors demonstration: three robot arms perform concurrent manipulation">
+        <source src="/images/papers/mrbench-demo.mp4" type="video/mp4">
+        <a href="/images/papers/mrbench-demo.mp4">Watch the MRBench demo</a>
+      </video>
+      <button class="video-toggle" type="button" aria-label="Pause MRBench demo" aria-pressed="true" hidden>Pause</button>
+    </div>
     <div class="pub-content">
     <div class="pub-title">
       MRBench: Benchmarking Physical Necessity Reasoning in Heterogeneous Multi-Robot Manipulation
