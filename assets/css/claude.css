@@ -269,9 +269,13 @@ footer { margin-top: 30px; font-size: 14px; }
 .nus-crest { width: 44px; height: 62px; margin-left: 15px; overflow: hidden; }
 .nus-crest img { display: block; height: 62px; width: auto; max-width: none; }
 @media (max-width:600px) { .nus-crest { width: 38px; height: 54px; margin-left: 9px; } .nus-crest img { height: 54px; } }
-/* Real project clips, rather than a large GIF download. */
-.pub-thumb.pub-video { position: relative; padding: 0; overflow: hidden; min-height: 0; background: #141414; }
-.pub-video video { display: block; width: 100%; height: auto; }
-.video-toggle { position: absolute; bottom: 6px; right: 6px; font: 400 14px/1.2 var(--sans); color: #fff; background: rgba(20,20,20,.8); border: 1px solid rgba(255,255,255,.7); padding: 4px 7px; cursor: pointer; }
-.video-toggle:hover { background: #141414; }
-.video-toggle[hidden] { display: none; }
+/* Video thumbnails double as keyboard-accessible playback controls. */
+.pub-thumb.pub-video { padding: 0; overflow: hidden; min-height: 0; background: #141414; cursor: pointer; }
+.pub-video video { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
+
+/* Two examples from the survey's “Act” panels, readable at thumbnail size. */
+.pub-thumb.survey-thumb { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; align-content: center; }
+.survey-example { display: grid; gap: 4px; color: var(--ink); text-align: center; font: 500 12px/1.4 var(--sans); }
+.survey-scene { display: block; aspect-ratio: 395 / 333; background: #fbf9f4 url('../../images/papers/embodied-agents.png') no-repeat; background-size: 519% auto; }
+.computer-scene { background-position: 75% 19%; }
+.robot-scene { background-position: 75% 94%; }

@@ -57,13 +57,11 @@ excerpt: "An RuiHe (Andy) — MS Student at NUS. Research in Embodied AI, Multim
 <section id="publications" class="fade-section">
   <h2>Publications</h2>
   <div class="pub-item">
-    <div class="pub-thumb pub-video">
-      <video autoplay muted loop playsinline preload="metadata" poster="/images/papers/mrbench-cover.jpg" aria-label="MRBench Spring Doors demonstration: three robot arms perform concurrent manipulation">
+    <button class="pub-thumb pub-video" type="button" aria-label="Play MRBench Spring Doors demo">
+      <video muted loop playsinline preload="metadata" poster="/images/papers/mrbench-cover.jpg" aria-hidden="true">
         <source src="/images/papers/mrbench-demo.mp4" type="video/mp4">
-        <a href="/images/papers/mrbench-demo.mp4">Watch the MRBench demo</a>
       </video>
-      <button class="video-toggle" type="button" aria-label="Pause MRBench demo" aria-pressed="true" hidden>Pause</button>
-    </div>
+    </button>
     <div class="pub-content">
     <div class="pub-title">
       MRBench: Benchmarking Physical Necessity Reasoning in Heterogeneous Multi-Robot Manipulation
@@ -75,7 +73,10 @@ excerpt: "An RuiHe (Andy) — MS Student at NUS. Research in Embodied AI, Multim
     </div>
   </div>
   <div class="pub-item">
-    <a class="pub-thumb" href="https://showlab.github.io/Awesome-Multimodal-Embodied-Agent/" target="_blank" rel="noopener noreferrer"><img src="/images/papers/embodied-agents.png" alt="PAPAV framework: Perceive, Anticipate, Plan, Act, Verify" loading="lazy" decoding="async"></a>
+    <a class="pub-thumb survey-thumb" href="https://showlab.github.io/Awesome-Multimodal-Embodied-Agent/" target="_blank" rel="noopener noreferrer">
+      <span class="survey-example"><span class="survey-scene computer-scene" role="img" aria-label="An agent stacks digital shapes on a computer screen"></span><span>Computer use</span></span>
+      <span class="survey-example"><span class="survey-scene robot-scene" role="img" aria-label="A robot stacks physical blocks on a table"></span><span>Robot use</span></span>
+    </a>
     <div class="pub-content">
     <div class="pub-title">
       Awesome Multimodal Embodied Agents: From Computer-Use to Robot-Use

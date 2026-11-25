@@ -1,40 +1,33 @@
-/* Lightweight, viewport-aware paper teasers with a user-controlled pause. */
 (() => {
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  document.querySelectorAll('.pub-video').forEach(container => {
-    const video = container.querySelector('video');
-    const button = container.querySelector('.video-toggle');
-    let userPaused = false;
+  document.querySelectorAll('button.pub-video').forEach(button => {
+    const video = button.querySelector('video');
     let visible = false;
-    video.muted = true;
-    const sync = () => {
-      button.textContent = video.paused ? 'Play' : 'Pause';
-      button.setAttribute('aria-label', `${video.paused ? 'Play' : 'Pause'} MRBench demo`);
-      button.setAttribute('aria-pressed', String(!video.paused));
+    let playbackPreference;
+
+    const syncPlayback = () => {
+      const shouldPlay = playbackPreference ?? !reducedMotion.matches;
+      if (visible && !document.hidden && shouldPlay) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
     };
-    const play = () => video.play().catch(sync);
-    if (reducedMotion.matches) video.pause();
-    button.hidden = false;
-    video.addEventListener('play', sync);
-    video.addEventListener('pause', sync);
+    const syncLabel = () => {
+      button.setAttribute('aria-label', `${video.paused ? 'Play' : 'Pause'} MRBench Spring Doors demo`);
+    };
+
+    video.addEventListener('play', syncLabel);
+    video.addEventListener('pause', syncLabel);
     button.addEventListener('click', () => {
-      userPaused = !video.paused;
-      if (userPaused) video.pause();
-      else play();
+      playbackPreference = video.paused;
+      syncPlayback();
     });
-    new IntersectionObserver(entries => {
-      visible = entries[0].isIntersecting;
-      if (visible && !userPaused && !reducedMotion.matches) play();
-      else video.pause();
+    new IntersectionObserver(([entry]) => {
+      visible = entry.intersectionRatio >= 0.15;
+      syncPlayback();
     }, {threshold: 0.15}).observe(video);
-    document.addEventListener('visibilitychange', () => {
-      if (document.hidden) video.pause();
-      else if (visible && !userPaused && !reducedMotion.matches) play();
-    });
-    reducedMotion.addEventListener('change', () => {
-      if (reducedMotion.matches) video.pause();
-      else if (visible && !userPaused) play();
-    });
-    sync();
+    document.addEventListener('visibilitychange', syncPlayback);
+    reducedMotion.addEventListener('change', syncPlayback);
   });
 })();
