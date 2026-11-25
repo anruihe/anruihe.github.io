@@ -57,7 +57,7 @@ excerpt: "An RuiHe (Andy) — MS Student at NUS. Research in Embodied AI, Multim
 <section id="publications" class="fade-section">
   <h2>Publications</h2>
   <div class="pub-item">
-    <a class="pub-thumb" href="https://arxiv.org/abs/2611.32803" target="_blank" rel="noopener noreferrer"><img src="/images/papers/mrbench.png" alt="MRBench overview: Concurrency and Reach tasks, with five resource configurations" loading="lazy" decoding="async"></a>
+    <a class="pub-thumb" href="https://arxiv.org/abs/2611.32803" target="_blank" rel="noopener noreferrer"><img src="/images/papers/mrbench-cover.jpg" alt="MRBench project cover: physical necessity reasoning with heterogeneous robot arms" loading="lazy" decoding="async"></a>
     <div class="pub-content">
     <div class="pub-title">
       MRBench: Benchmarking Physical Necessity Reasoning in Heterogeneous Multi-Robot Manipulation
