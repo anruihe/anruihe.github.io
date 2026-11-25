@@ -3,77 +3,63 @@
   <head>
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.png' | relative_url }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | relative_url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/claude.css' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="{{ '/assets/css/claude.css' | relative_url }}?v=20261125-mrbench">
   </head>
-  <body>
-
-    <nav>
+  <body class="page-{{ page.nav_active }}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="background-shapes" aria-hidden="true"><i class="circle"></i><i class="square"></i></div>
+    <nav class="site-nav" aria-label="Main navigation">
       <div class="nav-inner">
-        <a href="{{ '/' | relative_url }}" class="nav-name" style="text-decoration:none">An RuiHe<span class="cn">安瑞和</span></a>
+        <a href="{{ '/' | relative_url }}" class="nav-name"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>An RuiHe</a>
         <div class="nav-links">
-          <a href="{{ '/' | relative_url }}"{% if page.nav_active == "home" %} class="active"{% endif %}>Home</a>
-          <a href="{{ '/experience/' | relative_url }}"{% if page.nav_active == "experience" %} class="active"{% endif %}>Experience</a>
+          <a href="{{ '/' | relative_url }}"{% if page.nav_active == "home" %} class="active" aria-current="page"{% endif %}>Home</a>
+          <a href="{{ '/experience/' | relative_url }}"{% if page.nav_active == "experience" %} class="active" aria-current="page"{% endif %}>Experience</a>
         </div>
       </div>
     </nav>
-
-    <div class="container">
-
+    <main class="container" id="main-content">
       {% if page.show_header %}
-      <header>
+      <header class="profile-header">
         <div class="header-top">
-          <div class="bio-row">
-            <img class="avatar" src="{{ '/images/profile.png' | relative_url }}" alt="An RuiHe" />
-            <div>
-              <h1>An RuiHe <span class="chinese">安瑞和</span></h1>
-              <div class="header-role">MS Student · National University of Singapore</div>
-              <div class="header-role"><a href="https://sites.google.com/view/showlab/home" target="_blank" style="color: inherit; text-decoration: underline;">Show Lab</a></div>
-              <div class="profile-tags">
-                <span class="tag">Embodied AI</span>
-                <span class="tag">Multimodal LLM</span>
-                <span class="tag">Computer Vision</span>
-                <span class="tag">3D Vision</span>
-              </div>
+          <div class="bio-copy">
+            <p class="eyebrow">Research · Show Lab, NUS</p>
+            <h1>An RuiHe <span class="chinese">安瑞和</span></h1>
+            <p class="header-role">MS Student · National University of Singapore</p>
+            <div class="profile-tags">
+              <span class="tag">Embodied AI</span>
+              <span class="tag">Multimodal LLM</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">3D Vision</span>
+            </div>
+            <div class="contact-info">
+              <a href="mailto:{{ site.author.email }}">Email</a>
+              <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://scholar.google.com/citations?user=e96NfoAAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+              <a href="https://sites.google.com/view/showlab/home" target="_blank" rel="noopener noreferrer">Show Lab</a>
             </div>
           </div>
-        </div>
-        <div class="contact-info">
-          <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-          <span class="contact-sep">·</span>
-          <a href="https://github.com/{{ site.author.github }}" target="_blank">GitHub</a>
-          <span class="contact-sep">·</span>
-          <a href="https://scholar.google.com/citations?user=e96NfoAAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>
+          <figure class="portrait-frame"><img class="avatar" src="{{ '/images/profile.png' | relative_url }}" alt="An RuiHe" width="220" height="220"></figure>
         </div>
       </header>
+      {% else %}
+      <header class="page-intro">
+        <p class="eyebrow">An RuiHe · Research &amp; Experience</p>
+        <h1>Research &amp;<br>experience.</h1>
+        <p>Education, research projects, and industry experience in embodied AI.</p>
+      </header>
       {% endif %}
-
       {{ content }}
-
       <footer>
-        &copy; 2026 An RuiHe &nbsp;|&nbsp; <a href="https://github.com/{{ site.author.github }}/anruihe.github.io" target="_blank">View Source</a>
+        <span>&copy; 2026 An RuiHe · 安瑞和</span>
+        <a href="https://github.com/{{ site.author.github }}/anruihe.github.io" target="_blank" rel="noopener noreferrer">View source</a>
       </footer>
-
-    </div>
-
-    <script>
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.08 }
-      );
-      document.querySelectorAll('.fade-section').forEach((el) => observer.observe(el));
-    </script>
-
+    </main>
   </body>
 </html>
