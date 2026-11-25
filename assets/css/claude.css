@@ -272,3 +272,12 @@ footer { margin-top: 30px; font-size: 14px; }
 /* Video thumbnails double as keyboard-accessible playback controls. */
 .pub-thumb.pub-video { padding: 0; overflow: hidden; min-height: 0; background: #141414; cursor: pointer; }
 .pub-video video { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
+
+.papav-thumb { flex-direction: column; gap: 5px; }
+.papav-label {
+  width: 100%;
+  padding: 4px 8px;
+  background: #102433;
+  color: #fff;
+  font: 600 23px/1.1 var(--sans);
+}
