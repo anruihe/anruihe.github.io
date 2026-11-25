@@ -69,7 +69,6 @@ excerpt: "An RuiHe (Andy) — MS Student at NUS. Research in Embodied AI, Multim
     </div>
     <div class="pub-meta">Yanzhe Chen, Zhijun Cao, <strong>Ruihe An</strong>, Chang Gong, Mike Zheng Shou</div>
     <div class="pub-meta"><a href="https://arxiv.org/abs/2611.32803" target="_blank">arXiv:2611.32803</a> &nbsp;·&nbsp; <a href="https://showlab.github.io/MRBench/" target="_blank">Project Page</a></div>
-    <div class="pub-meta">My contributions: manuscript writing; construction of the Concurrency suite; co-design of MRScissors and baseline pipelines; baseline evaluation.</div>
     </div>
   </div>
   <div class="pub-item">
