@@ -73,9 +73,8 @@ excerpt: "An RuiHe (Andy) — MS Student at NUS. Research in Embodied AI, Multim
     </div>
   </div>
   <div class="pub-item">
-    <a class="pub-thumb survey-thumb" href="https://showlab.github.io/Awesome-Multimodal-Embodied-Agent/" target="_blank" rel="noopener noreferrer">
-      <span class="survey-example"><span class="survey-scene computer-scene" role="img" aria-label="An agent stacks digital shapes on a computer screen"></span><span>Computer use</span></span>
-      <span class="survey-example"><span class="survey-scene robot-scene" role="img" aria-label="A robot stacks physical blocks on a table"></span><span>Robot use</span></span>
+    <a class="pub-thumb" href="https://showlab.github.io/Awesome-Multimodal-Embodied-Agent/" target="_blank" rel="noopener noreferrer">
+      <img src="/images/papers/papav-cover.jpg" alt="PAPAV: Perceive, Anticipate, Plan, Act, Verify" width="780" height="410" loading="lazy" decoding="async">
     </a>
     <div class="pub-content">
     <div class="pub-title">

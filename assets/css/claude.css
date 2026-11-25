@@ -272,10 +272,3 @@ footer { margin-top: 30px; font-size: 14px; }
 /* Video thumbnails double as keyboard-accessible playback controls. */
 .pub-thumb.pub-video { padding: 0; overflow: hidden; min-height: 0; background: #141414; cursor: pointer; }
 .pub-video video { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
-
-/* Two examples from the survey's “Act” panels, readable at thumbnail size. */
-.pub-thumb.survey-thumb { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; align-content: center; }
-.survey-example { display: grid; gap: 4px; color: var(--ink); text-align: center; font: 500 12px/1.4 var(--sans); }
-.survey-scene { display: block; aspect-ratio: 395 / 333; background: #fbf9f4 url('../../images/papers/embodied-agents.png') no-repeat; background-size: 519% auto; }
-.computer-scene { background-position: 75% 19%; }
-.robot-scene { background-position: 75% 94%; }
