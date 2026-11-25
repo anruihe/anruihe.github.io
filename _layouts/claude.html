@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | relative_url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="{{ '/assets/css/claude.css' | relative_url }}?v=20261125-mrbench">
+    <link rel="stylesheet" href="{{ '/assets/css/claude.css' | relative_url }}?v=20261125-editorial">
   </head>
   <body class="page-{{ page.nav_active }}">
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -45,13 +45,13 @@
               <a href="https://sites.google.com/view/showlab/home" target="_blank" rel="noopener noreferrer">Show Lab</a>
             </div>
           </div>
-          <figure class="portrait-frame"><img class="avatar" src="{{ '/images/profile.png' | relative_url }}" alt="An RuiHe" width="220" height="220"></figure>
+          <figure class="portrait-frame"><div class="portrait-crop"><img class="avatar" src="{{ '/images/portrait-20261125.jpg' | relative_url }}" alt="Portrait of An RuiHe" width="2885" height="3846" decoding="async"></div></figure>
         </div>
       </header>
       {% else %}
       <header class="page-intro">
         <p class="eyebrow">An RuiHe · Research &amp; Experience</p>
-        <h1>Research &amp;<br>experience.</h1>
+        <h1>Research &amp; experience.</h1>
         <p>Education, research projects, and industry experience in embodied AI.</p>
       </header>
       {% endif %}

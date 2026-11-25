@@ -57,6 +57,8 @@ excerpt: "An RuiHe (Andy) — MS Student at NUS. Research in Embodied AI, Multim
 <section id="publications" class="fade-section">
   <h2>Publications</h2>
   <div class="pub-item">
+    <a class="pub-thumb" href="https://arxiv.org/abs/2611.32803" target="_blank" rel="noopener noreferrer"><img src="/images/papers/mrbench.png" alt="MRBench overview: Concurrency and Reach tasks, with five resource configurations" loading="lazy" decoding="async"></a>
+    <div class="pub-content">
     <div class="pub-title">
       MRBench: Benchmarking Physical Necessity Reasoning in Heterogeneous Multi-Robot Manipulation
       <span class="pub-badge">arXiv 2026</span>
@@ -64,21 +66,28 @@ excerpt: "An RuiHe (Andy) — MS Student at NUS. Research in Embodied AI, Multim
     <div class="pub-meta">Yanzhe Chen, Zhijun Cao, <strong>Ruihe An</strong>, Chang Gong, Mike Zheng Shou</div>
     <div class="pub-meta"><a href="https://arxiv.org/abs/2611.32803" target="_blank">arXiv:2611.32803</a> &nbsp;·&nbsp; <a href="https://showlab.github.io/MRBench/" target="_blank">Project Page</a></div>
     <div class="pub-meta">My contributions: manuscript writing; construction of the Concurrency suite; co-design of MRScissors and baseline pipelines; baseline evaluation.</div>
+    </div>
   </div>
   <div class="pub-item">
+    <a class="pub-thumb" href="https://showlab.github.io/Awesome-Multimodal-Embodied-Agent/" target="_blank" rel="noopener noreferrer"><img src="/images/papers/embodied-agents.png" alt="PAPAV framework: Perceive, Anticipate, Plan, Act, Verify" loading="lazy" decoding="async"></a>
+    <div class="pub-content">
     <div class="pub-title">
       Awesome Multimodal Embodied Agents: From Computer-Use to Robot-Use
       <span class="pub-badge">Survey 2026</span>
     </div>
     <div class="pub-meta">Yanzhe Chen, Ziyi Yang, Jifeng Zhu, Qiming Huang, <strong>An RuiHe</strong>, Peiyao Xu, Hesen Yang, Runda Liu, Chang Gong, Zhijun Cao, Zechen Bai, Wenzheng Zeng, Yiqi Lin, Guoqiang Liang, Kevin Yuchen Ma, Kevin Qinghong Lin, Mike Zheng Shou<sup>&dagger;</sup> (Show Lab, NUS)</div>
     <div class="pub-meta"><a href="https://doi.org/10.6084/m9.figshare.33529048" target="_blank">Paper (DOI: 10.6084/m9.figshare.33529048)</a> &nbsp;·&nbsp; <a href="https://github.com/showlab/Awesome-Multimodal-Embodied-Agent/blob/main/assets/SURVEY_Multimodal_Embodied_Agent.pdf" target="_blank">PDF</a> &nbsp;·&nbsp; <a href="https://showlab.github.io/Awesome-Multimodal-Embodied-Agent/" target="_blank">Project Page</a> &nbsp;·&nbsp; <a href="https://github.com/showlab/Awesome-Multimodal-Embodied-Agent" target="_blank">GitHub</a></div>
+    </div>
   </div>
   <div class="pub-item">
+    <a class="pub-thumb" href="https://arxiv.org/abs/2505.19474" target="_blank" rel="noopener noreferrer"><img src="/images/papers/causal-llava.png" alt="Causal-LLaVA architecture for mitigating multimodal hallucinations" loading="lazy" decoding="async"></a>
+    <div class="pub-content">
     <div class="pub-title">
       Causal-LLaVA: Causal Disentanglement for Mitigating Hallucination in Multimodal Large Language Models
       <span class="pub-badge">arXiv 2025</span>
     </div>
     <div class="pub-meta">Xinmiao Hu, Chun Wang, <strong>An RuiHe</strong>, ChenYu Shao, Xiaojun Ye, Sheng Zhou, Liangcheng Li (Zhejiang University)</div>
     <div class="pub-meta"><a href="https://arxiv.org/abs/2505.19474" target="_blank">arXiv:2505.19474</a></div>
+    </div>
   </div>
 </section>
