@@ -20,13 +20,18 @@ excerpt: "An RuiHe (Andy) — MS Student at NUS. Research in Embodied AI, Multim
   <p>
     My research lies at the intersection of <strong>embodied AI</strong>, <strong>multimodal large language models</strong>,
     and <strong>3D scene understanding</strong>. I am passionate about building AI systems that can perceive,
-    reason about, and act in the physical world. I have co-authored papers on mitigating hallucinations in LVLMs
-    and developing real-time scene understanding systems integrated into wearable smart-vision aids.
+    reason about, and act in the physical world. My work includes physical necessity reasoning for heterogeneous
+    multi-robot manipulation (<a href="https://arxiv.org/abs/2611.32803" target="_blank">MRBench</a>),
+    hallucination mitigation in LVLMs, and real-time scene understanding for wearable smart-vision aids.
   </p>
 </section>
 
 <section id="news" class="fade-section">
   <h2>News</h2>
+  <div class="news-item">
+    <span class="news-date">2026.11</span>
+    <span class="news-content"><span class="label">Paper</span> <a href="https://arxiv.org/abs/2611.32803" target="_blank"><em>MRBench</em></a> is available on arXiv: benchmarking physical necessity reasoning in heterogeneous multi-robot manipulation.</span>
+  </div>
   <div class="news-item">
     <span class="news-date">2026.09</span>
     <span class="news-content"><span class="label">Survey</span> Released <em><a href="https://showlab.github.io/Awesome-Multimodal-Embodied-Agent/" target="_blank">Awesome Multimodal Embodied Agents: From Computer-Use to Robot-Use</a></em> — PAPAV (Perceive → Anticipate → Plan → Act → Verify), a capability-centric map of the Agent × Robotics landscape, with an analysis of 64 benchmarks.</span>
@@ -51,6 +56,15 @@ excerpt: "An RuiHe (Andy) — MS Student at NUS. Research in Embodied AI, Multim
 
 <section id="publications" class="fade-section">
   <h2>Publications</h2>
+  <div class="pub-item">
+    <div class="pub-title">
+      MRBench: Benchmarking Physical Necessity Reasoning in Heterogeneous Multi-Robot Manipulation
+      <span class="pub-badge">arXiv 2026</span>
+    </div>
+    <div class="pub-meta">Yanzhe Chen, Zhijun Cao, <strong>Ruihe An</strong>, Chang Gong, Mike Zheng Shou</div>
+    <div class="pub-meta"><a href="https://arxiv.org/abs/2611.32803" target="_blank">arXiv:2611.32803</a> &nbsp;·&nbsp; <a href="https://showlab.github.io/MRBench/" target="_blank">Project Page</a></div>
+    <div class="pub-meta">My contributions: manuscript writing; construction of the Concurrency suite; co-design of MRScissors and baseline pipelines; baseline evaluation.</div>
+  </div>
   <div class="pub-item">
     <div class="pub-title">
       Awesome Multimodal Embodied Agents: From Computer-Use to Robot-Use

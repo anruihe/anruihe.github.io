@@ -27,6 +27,30 @@ excerpt: "Experience — An RuiHe, MS student at NUS."
   </div>
 </section>
 
+
+<section id="research" class="fade-section">
+  <h2>Research &amp; Projects</h2>
+  <details class="collapse" open>
+    <summary>
+      <span class="summary-main">
+        <span class="exp-title">MRBench: Physical Necessity Reasoning in Heterogeneous Multi-Robot Manipulation</span>
+        <span class="exp-org">NUS, Show Lab &nbsp;·&nbsp; Co-author</span>
+      </span>
+      <span class="exp-period">2026 <span class="summary-chevron">&#9654;</span></span>
+    </summary>
+    <div class="collapse-body">
+      <p>MRBench asks which robots are physically necessary, beyond coordinating a given team. Its Concurrency and Reach suites cover eight tasks, each under five resource configurations: exact, surplus, shortfall, swapped, and borrow. The benchmark tests minimal feasible team selection, infeasibility recognition, and passive-object substitution.</p>
+      <ul class="exp-desc">
+        <li><strong>Benchmark construction:</strong> Built the Concurrency suite, comprising four tasks with simultaneous-action constraints and five resource configurations per task.</li>
+        <li><strong>Manuscript:</strong> Responsible for paper writing.</li>
+        <li><strong>Method co-design:</strong> Participated in designing MRScissors, which separates task requirements from measured physical capabilities and uses exact search to identify minimal feasible teams. Across two model backbones, the method achieves 85.4% and 91.2% team-selection accuracy, exceeding the strongest baselines by 10.4 and 9.5 percentage points.</li>
+        <li><strong>Baseline pipelines and evaluation:</strong> Co-designed and evaluated SMART-LLM-style, RoCo-style, and HMAS-2-style pipelines under shared tools, budgets, output formats, and a common executor for fair comparison.</li>
+      </ul>
+      <p><a href="https://arxiv.org/abs/2611.32803" target="_blank">Paper on arXiv</a> &nbsp;·&nbsp; <a href="https://showlab.github.io/MRBench/" target="_blank">Project Page</a></p>
+    </div>
+  </details>
+</section>
+
 <section id="experience" class="fade-section">
   <h2>Internships</h2>
   <p class="section-hint">Click any role to expand the project details.</p>
@@ -37,7 +61,7 @@ excerpt: "Experience — An RuiHe, MS student at NUS."
         <span class="exp-title">Data &amp; Algorithm Intern</span>
         <span class="exp-org">Alibaba Tongyi Lab (Wanxiang)</span>
       </span>
-      <span class="exp-period">Mar 2026 – Present <span class="summary-chevron">&#9654;</span></span>
+      <span class="exp-period">Mar 2026 – Jul 2026 <span class="summary-chevron">&#9654;</span></span>
     </summary>
     <div class="collapse-body">
       <ul class="exp-desc">
